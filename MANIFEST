@@ -1,0 +1,9 @@
+Makefile.PL
+NeuralNet.pm
+examples
+examples/adder.xml
+examples/netadd.xml
+examples/doAdd.pl
+examples/adder.pl
+examples/learnAdd.pl
+MANIFEST

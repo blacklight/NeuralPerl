@@ -11,7 +11,7 @@
 #        NOTES:  ---
 #       AUTHOR:  BlackLight (http://0x00.ath.cx), blacklight@0x00.ath.cx
 #      COMPANY:  none
-#      VERSION:  0.01b
+#      VERSION:  0.1
 #      CREATED:  18/08/2009 17:29:31
 #     REVISION:  ---
 #===============================================================================
@@ -22,21 +22,7 @@ use strict;
 use warnings;
 use XML::Parser;
 
-sub actv_f  {
-	my $x = shift;
-	return $x;
-}
-
-sub deriv  {
-	my ($f,$x) = @_;
-	my $h = 0.0000001;
-	return ( (&$f($x+$h) - &$f($x)) / $h );
-}
-
-sub momentum  {
-	my ($N, $x) = @_;
-	return (0.8*$N)/(20*$x + $N);
-}
+our $VERSION = '0.1';
 
 my $actv = \&actv_f;
 my $ref_epochs = 0;
@@ -54,6 +40,22 @@ my @output_neurons = ();
 my @in_hid_synapses = ();
 my @hid_out_synapses = ();
 my @expect = ();
+
+sub actv_f  {
+	my $x = shift;
+	return $x;
+}
+
+sub deriv  {
+	my ($f,$x) = @_;
+	my $h = 0.0000001;
+	return ( (&$f($x+$h) - &$f($x)) / $h );
+}
+
+sub momentum  {
+	my ($N, $x) = @_;
+	return (0.8*$N)/(20*$x + $N);
+}
 
 sub new  {
 	my ($class, %arg) = @_;
