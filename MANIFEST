@@ -1,9 +1,13 @@
-Makefile.PL
-NeuralNet.pm
-examples
-examples/adder.xml
-examples/netadd.xml
-examples/doAdd.pl
-examples/adder.pl
-examples/learnAdd.pl
-MANIFEST
+README 				How to install and use this stuff
+Changes 				Changes from a release to another
+Makefile.PL 			Makefile to build the package
+AUTHORS 				Who made this
+NeuralNet.pm 			Main file for the module
+man/NeuralNet.pod   	Man / perldoc page
+examples/netadd.xml 	Example file containing a trained network for sums in XML format
+examples/doAdd.pl 		Example script to do sums using a trained network
+examples/adder.pl 		Example script that teaches a network to do sums and use it
+examples/learnAdd.xml 	Example file containing some training sets to do sums in XML format
+examples/learnAdd.pl 	Example script that teaches a network to do sums and saves it to an XML file
+MANIFEST 				This file
+

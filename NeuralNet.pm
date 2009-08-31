@@ -4,25 +4,26 @@
 #
 #         FILE:  NeuralNet.pm
 #
-#  DESCRIPTION:  Main file for Neural package
+#  DESCRIPTION:  NeuralNet package
 #
 #        FILES:  ---
-#         BUGS:  ---
+#         BUGS:  none known
 #        NOTES:  ---
-#       AUTHOR:  BlackLight (http://0x00.ath.cx), blacklight@0x00.ath.cx
-#      COMPANY:  none
+#       AUTHOR:  BlackLight (http://0x00.ath.cx), blacklight@autistici.org
 #      VERSION:  0.1
 #      CREATED:  18/08/2009 17:29:31
 #     REVISION:  ---
+#      LICENCE:  GPL v.3
 #===============================================================================
 
 package NeuralNet;
 
+$VERSION = '0.1';
+sub Version  { $VERSION; }
+
 use strict;
 use warnings;
 use XML::Parser;
-
-our $VERSION = '0.1';
 
 my $actv = \&actv_f;
 my $ref_epochs = 0;
@@ -329,11 +330,11 @@ sub train  {
 	}
 }
 
-sub getOutput  {
+sub output  {
 	return $output_neurons[0]->{activation_value};
 }
 
-sub getOutputs  {
+sub outputs  {
 	my @out;
 
 	for my $neuron (@output_neurons)  {

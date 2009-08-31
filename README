@@ -1,0 +1,19 @@
+NeuralPerl is a Perl module developed for managing neural networks,
+and it's basically a Perl version, almost completely compatible, of
+Neural++ library for C++.
+
+For the installation:
+
+$ perl Makefile.PL
+$ make
+$ make test (optional)
+# make install
+
+For the usage, just take a look in the 'examples' directory, or,
+after the installation, take a look at the documentation via
+'man NeuralNet'.
+
+Author  : BlackLight <blacklight@autistici.org>
+Web     : http://0x00.ath.cx
+Licence : GPL v.3
+

@@ -5,9 +5,17 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
 	'NAME'		=> 'NeuralNet',
-	'VERSION_FROM'	=> 'NeuralNet.pm', # finds $VERSION
+	'AUTHOR' 	=> 'BlackLight <blacklight@autistici.org>',
+	'ABSTRACT' 	=> 'The Perl module for managing neural networks',
+	'LICENSE' 	=> 'GPL',
+	'VERSION_FROM'	=> 'NeuralNet.pm',
+	
+	'MAN3PODS' 	=>  {
+		'man/NeuralNet.pod' => 'blib/man3/NeuralNet.3pm'
+	},
+
 	'PREREQ_PM'		=> {
-		Digest::MD5 => 2.30
-	}, # e.g., Module::Name => 1.1
+		'XML::Parser' => 0
+	},
 );
 
