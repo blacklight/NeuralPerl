@@ -6,10 +6,10 @@
 	<layer class="hidden" size="2"></layer>
 	<layer class="output" size="1"></layer>
 
-	<synapsis class="inhid" input="0" output="0" weight="0.522457595902166"></synapsis>
-	<synapsis class="inhid" input="0" output="1" weight="0.496354320318742"></synapsis>
-	<synapsis class="inhid" input="1" output="0" weight="0.869503742484292"></synapsis>
-	<synapsis class="inhid" input="1" output="1" weight="0.244743628184788"></synapsis>
-	<synapsis class="hidout" input="0" output="0" weight="0.907837598095385"></synapsis>
-	<synapsis class="hidout" input="1" output="0" weight="1.00296117774274"></synapsis>
+	<synapsis class="inhid" input="0" output="0" weight="0.231672938528738"></synapsis>
+	<synapsis class="inhid" input="0" output="1" weight="1.02074894109305"></synapsis>
+	<synapsis class="inhid" input="1" output="0" weight="0.973283514974802"></synapsis>
+	<synapsis class="inhid" input="1" output="1" weight="0.424346526100909"></synapsis>
+	<synapsis class="hidout" input="0" output="0" weight="0.426640168937576"></synapsis>
+	<synapsis class="hidout" input="1" output="0" weight="1.00642494758296"></synapsis>
 </network>
