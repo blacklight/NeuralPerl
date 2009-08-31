@@ -10,4 +10,5 @@ examples/adder.pl 		Example script that teaches a network to do sums and use it
 examples/learnAdd.xml 	Example file containing some training sets to do sums in XML format
 examples/learnAdd.pl 	Example script that teaches a network to do sums and saves it to an XML file
 MANIFEST 				This file
-
+INSTALL 				How to install NeuralPerl
+LICENCE 				Licence for the module
