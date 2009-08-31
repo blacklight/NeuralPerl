@@ -3,7 +3,7 @@ Changes 				Changes from a release to another
 Makefile.PL 			Makefile to build the package
 AUTHORS 				Who made this
 NeuralNet.pm 			Main file for the module
-man/NeuralNet.pod   	Man / perldoc page
+man/NeuralNet.pod   	Man page
 examples/netadd.xml 	Example file containing a trained network for sums in XML format
 examples/doAdd.pl 		Example script to do sums using a trained network
 examples/adder.pl 		Example script that teaches a network to do sums and use it
